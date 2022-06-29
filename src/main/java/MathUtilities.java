@@ -8,9 +8,9 @@ public class MathUtilities{
    * @param valueToAdd number
    * @return the sum of the two numbers
    */
-  public Integer add(Integer baseValue, Integer valueToAdd){
-      return null;
-  }
+  public Integer add(Integer baseValue, Integer valueToAdd) { return null;}
+
+
 
   /**
    * Add two number together

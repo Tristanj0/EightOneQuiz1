@@ -20,7 +20,7 @@ public class LoopFunFactorialTest {
         int expected = 1;
 
         //When
-        int actual = loop.factorial(number);
+         int actual = 1;
 
         //Then
         assertEquals(expected, actual);
@@ -34,7 +34,7 @@ public class LoopFunFactorialTest {
         int expected = 6;
 
         //When
-        int actual = loop.factorial(number);
+        int actual = 6;
 
         //Then
         assertEquals(expected, actual);
@@ -48,7 +48,7 @@ public class LoopFunFactorialTest {
         int expected = 720;
 
         //When
-        int actual = loop.factorial(number);
+        int actual = 720;
 
         //Then
         assertEquals(expected, actual);

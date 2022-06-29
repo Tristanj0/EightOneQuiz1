@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class StringUtilities {
     /**
@@ -5,8 +6,12 @@ public class StringUtilities {
      * @return `input`
      */
     public String returnInput(String input) {
-        return null;
+        Scanner scan = new Scanner(System.in);
+        String s = scan.next();
+        int i = scan.nextInt();
+        return input;
     }
+
 
     /**
      * @param baseValue value to be added to
@@ -14,7 +19,11 @@ public class StringUtilities {
      * @return the concatenation of `baseValue` and `valueToBeAdded`
      */
     public String concatenate(String baseValue, String valueToBeAdded) {
-        return null;
+        String firstName = " ";
+        String lastName = " ";
+        System.out.println(firstName.concat(lastName));
+
+        return baseValue + valueToBeAdded;
     }
 
     /**
