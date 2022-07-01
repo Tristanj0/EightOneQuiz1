@@ -9,15 +9,13 @@ public class LoopFun {
      * @param number
      * @return the factorial of the number
      */
-    public long factorial(Integer number) {
-        int num = 5;
+    public Integer factorial(Integer number) {
         int factorial = 1;
-        for (int i = 1; i <= num; i++) {
-            factorial = factorial * i;
+        for (int i = 1; i <= number; i++) {
+            number = number * i;
         }
-        return factorial;
+        return number;
     }
-
 
 
     /**
@@ -29,17 +27,13 @@ public class LoopFun {
      * @return Upper case string of the first letter of each word
      */
     public String acronym(String phrase) {
+        String[] phrase2 = phrase.split(" ");
+        String acronym = "";
 
-        String text = "Portable Network Graphics";{
-            System.out.println(text);
-            String acronym = " ";
-
-            for (char c : text.toCharArray())
-                if (Character.isUpperCase(c)) 
-                    acronym += c;
-            System.out.println(acronym);
+        for (int i = 0; i <= phrase2.length - 1; i++) {
+            acronym += phrase2[i].charAt(0);
         }
-        return phrase;
+        return acronym.toUpperCase();
     }
 
 
@@ -57,7 +51,25 @@ public class LoopFun {
      * @return the encrypted string by shifting each character by three character
      */
     public String encrypt(String word) {
-        return null;
+        StringBuilder crypt = new StringBuilder();
+        int i;
+        for (i = 0; i < word.length(); i++) {
+
+            switch (word.charAt(i)) {
+                case 'x':
+                    crypt.append('a');
+                    break;
+                case 'y':
+                    crypt.append('b');
+                    break;
+                case 'z':
+                    crypt.append('c');
+                    break;
+                default:
+                    crypt.append((char) (word.charAt(i) + 3));
+            }
+        }
+        return crypt.toString();
     }
 }
 
